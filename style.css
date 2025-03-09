@@ -69,3 +69,62 @@ background-color: #250057;
     cursor: pointer;
     display: none;
 }
+
+/* ========== responsive part ======== */
+@media screen and (max-width:768px) {
+    .container{
+        width: 100%;
+    }
+    #title{
+        font-size:2rem ;
+        text-align: center;
+    }
+    .input-field{
+        padding: 7px 10px;
+        width: 280px;
+        font-size: 1rem;
+       }
+       #icon{
+        width: 20px;
+        
+       }
+}
+@media screen and (max-width : 400px) {
+    .container{
+        width: 100%;
+    }
+    #title{
+        font-size:2rem ;
+        text-align: center;
+    }
+    #line{
+        margin: 7px auto;
+    }
+    .input-field{
+        padding: 7px 10px;
+        width: 210px;
+        font-size: 1rem;
+       }
+}
+
+@media screen and (max-width:360px) {
+    .container{
+        width: 100%;
+    }
+    #title{
+        font-size:1.4rem ;
+        text-align: center;
+    }
+    #line{
+        margin: 7px auto;
+    }
+    .input-field{
+        padding: 5px 7px;
+        width: 180px;
+        font-size: 0.8rem;
+       }
+       #icon{
+        width: 15px;
+        
+       }
+}
