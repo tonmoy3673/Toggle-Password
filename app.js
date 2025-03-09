@@ -7,16 +7,20 @@ const copyIcon = document.getElementById('copy');
 // ========== get password value =========//
 const input = document.getElementById('pass')
 input.addEventListener('input',function(){
-  if (input.value) {
-      console.log(input.value);
-    viewIcon.style.display='block'
-    copyIcon.style.display='block'
+//   if (input.value) {
+//       console.log(input.value);
+//     viewIcon.style.display='block'
+//     copyIcon.style.display='block'
 
-  }
-  else{
-    viewIcon.style.display='none';
-    copyIcon.style.display='none';
-  }
+//   }
+//   else{
+//     viewIcon.style.display='none';
+//     copyIcon.style.display='none';
+//   }
+
+// ======== another way ==========//
+viewIcon.style.display = input.value ? 'block' : 'none'
+copyIcon.style.display = input.value ? 'block' : 'none'
   
 })
 
@@ -35,3 +39,7 @@ const toggleViewIcon =()=>{
 }
 
 // =========== copy =========//
+const copyPassword =()=>{
+    input.select();
+    document.execCommand('copy')
+}
