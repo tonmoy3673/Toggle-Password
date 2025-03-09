@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+background-color: #250057;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#title{
+    font-size:2.5rem ;
+    font-family: "Raleway", sans-serif;
+    color:#ebfffc ;
+}
+#title span{
+    color:#019f55;
+}
+#line{
+    width: 100%;
+    height: 4px;
+    background-color: #019f55;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+.pass-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+
+    
+}
+.input-field{
+ padding: 10px 15px;
+ width: 300px;
+ border-radius: 15px;
+ border: 0;
+ outline: 0;
+ font-size: 1.2rem;
+}
+.input-field::placeholder{
+    font-style: italic;
+}
+#icon{
+ width: 35px;
+ cursor: pointer;
+ position: absolute;
+ right: 10px;
+}
